@@ -1,18 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageViewFotoPlato"
+        android:layout_width="133dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginRight="255dp"
+        app:srcCompat="@drawable/ic_camera_black_18dp" />
+
     <TextView
+        android:id="@+id/textViewTituloReceta"
+        android:layout_width="180dp"
+        android:layout_height="29dp"
+        android:layout_alignTop="@id/imageViewFotoPlato"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="199dp"
+        android:layout_marginLeft="199dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@id/imageViewFotoPlato"
+        android:layout_toRightOf="@id/imageViewFotoPlato"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewEstiloComida"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTituloReceta"
+        android:layout_alignStart="@+id/textViewTituloReceta"
+        android:layout_alignLeft="@+id/textViewTituloReceta"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCarrito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignEnd="@+id/textViewEstiloComida"
+        android:layout_alignRight="@+id/textViewEstiloComida"
+        android:layout_alignBottom="@+id/imageViewFotoPlato"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="2dp"
+        app:srcCompat="@drawable/ic_shopping_cart_black_18dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

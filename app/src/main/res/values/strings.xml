@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">02_C_Relative_Layout</string>
+    <string name="camera_icon">camera_icon</string>
 </resources>
